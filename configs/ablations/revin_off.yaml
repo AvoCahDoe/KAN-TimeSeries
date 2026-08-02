@@ -1,0 +1,20 @@
+seed: 2021
+device: cuda
+tag: revin_off
+data:
+  dataset: ETTh1
+  seq_len: 96
+  pred_len: 96
+model:
+  name: TimeKAN
+  d_model: 64
+  k_bands: 3
+  decomp_mode: fixed
+  fusion_mode: attention
+  basis: chebyshev
+  use_revin: false
+train:
+  batch_size: 32
+  epochs: 8
+  lr: 0.001
+  patience: 3

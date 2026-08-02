@@ -1,0 +1,17 @@
+seed: 2021
+device: cuda
+data:
+  dataset: ETTh1
+  seq_len: 96
+  pred_len: 96
+model:
+  name: PlainKAN
+  d_model: 64
+  basis: chebyshev
+  use_revin: true
+  dropout: 0.1
+train:
+  batch_size: 32
+  epochs: 10
+  lr: 0.001
+  patience: 3
