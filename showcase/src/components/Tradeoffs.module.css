@@ -1,0 +1,49 @@
+.tradeoffs {
+  background: var(--bg);
+  padding-bottom: 4rem;
+}
+
+.list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.85rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+}
+
+.tag {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+
+.item h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.25rem;
+}
+
+.item p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+}
