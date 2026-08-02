@@ -1,0 +1,21 @@
+seed: 2021
+device: cuda
+data:
+  dataset: Electricity
+  seq_len: 96
+  pred_len: 96
+  max_channels: 50
+model:
+  name: TimeKAN
+  d_model: 48
+  k_bands: 3
+  decomp_mode: adaptive
+  fusion_mode: attention
+  n_kan_layers: 2
+  basis: chebyshev
+  use_revin: true
+train:
+  batch_size: 16
+  epochs: 8
+  lr: 0.001
+  patience: 3
