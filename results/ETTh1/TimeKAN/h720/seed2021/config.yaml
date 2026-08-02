@@ -1,0 +1,19 @@
+data:
+  dataset: ETTh1
+  pred_len: 720
+  seq_len: 96
+device: cuda
+model:
+  basis: chebyshev
+  d_model: 32
+  decomp_mode: adaptive
+  fusion_mode: attention
+  k_bands: 3
+  name: TimeKAN
+  use_revin: true
+seed: 2021
+train:
+  batch_size: 16
+  epochs: 2
+  lr: 0.001
+  patience: 2
